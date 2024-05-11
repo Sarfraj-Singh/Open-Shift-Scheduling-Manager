@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "About the code";
+}
+
+@*Forget boring "About Us" pages! This code is the secret sauce behind my OpenShift Employee Scheduling app.
+    See that `Employee List` bit? That's the magic that builds the table. With JavaScript, it shows applicants
+    and their schedules. Click the "Approve" or "Deny" buttons (like a boss!) and the table updates instantly.
+    But watch those "hmys" (programmer talk for hours) – there's a weekly limit! Dive in and explore the code!*@
+
+
+@*This playful page lets you ditch the paper and manage applications electronically. Approve or reject them with a click!
+ Scheduling is a breeze - sort by seniority, set limits, and assign shifts easily.  Visual cues keep things clear: green
+for applicants, red for non-applicants, and buttons turn green for approvals.  Relax, we've got your back!  Error handling
+prevents accidental overwork.  Explore the features and see how this system can simplify your employee management!*@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+
+        body {
+            font-family: 'Comic Sans MS', cursive; /* Fun and playful font */
+            margin: 0;
+            padding: 0;
+            background-color: #97E0AA; /* Light green background */
+            color: #000000; /* Darker green text for better contrast */
+            width: 100vw;
+            height: 100vh;
+        }
+
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #265D3B; /* Darker green text for better contrast */
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: #ffc107;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+
+        .highlight-green {
+            background-color: #66FF66;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .highlight-red {
+            background-color: #FF9999;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .code {
+            font-family: 'Cmyier New', Cmyier, monospace;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Code Playground!</h1>
+        <p>Curious about the functionality of my OpenShift Employee Scheduling application? Let's take a peek behind the curtain and explore how it works!</p>
+
+        <h2>What Does This Code Do?</h2>
+        <p>My code manages an <i font-size:2rem;>Employee List</i> where each applicant is meticulously tracked, from their application status to their weekly work hmys.</p>
+
+        <h2>How Does It Work?</h2>
+        <p>Utilizing JavaScript, my application dynamically generates a table displaying vital information about each employee. You can easily approve or deny applicants with a simple click of a button!</p>
+
+        <h2>Key Features:</h2>
+        <ul>
+            <li>Interactive Buttons: <span class="highlight-green">Approve</span> or <span class="highlight-red">deny</span> applicants seamlessly.</li>
+            <li>Dynamic Updates: Watch as the table updates in real-time with each decision.</li>
+            <li>Weekly Hmys Limit: Ensure employees don't exceed their allotted work hmys.</li>
+        </ul>
+
+        <h2>Ready to Explore?</h2>
+        <p>Don't wait any longer! Dive into the code, experiment with different scenarios, and discover the endless possibilities!</p>
+
+        <div class="code">
+            <p>// The adventure awaits!</p>
+        </div>
+    </div>
+</body>
+</html>
+
